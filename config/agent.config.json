@@ -1,0 +1,21 @@
+{
+  "meta_goal": "utrzymuj reaktywnego asystenta obsługującego kontenery",
+  "dry_run": true,
+  "containers": {
+    "tts": {
+      "base_url": "http://localhost:8081/tasks",
+      "timeout": 10,
+      "retries": 2
+    },
+    "stt": {
+      "base_url": "http://localhost:8082/tasks",
+      "timeout": 15,
+      "retries": 2
+    },
+    "aux": {
+      "base_url": "http://localhost:8090/tasks",
+      "timeout": 20,
+      "retries": 3
+    }
+  }
+}
